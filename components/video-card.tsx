@@ -1,7 +1,6 @@
 import { Card, CardContent } from "./ui/card";
 
 import { Badge } from "./ui/badge";
-import { CalendarIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import React from "react";
 import Thumbnail from "./thumbnail";
@@ -15,8 +14,7 @@ const VideoCard = ({ video }: any) => {
                     title={`Watch ${video.title}`}
                     >
                 <Thumbnail
-                    single_img={video.single_img}
-                    splash_img={video.splash_img}
+                    thumbnail={video.thumbnail}
                     title={video.title}
                 />
                 </Link>
